@@ -13,3 +13,17 @@ Console.WriteLine(cibiPreferiti[0]);
 
 Console.WriteLine("\nIl mio cibo preferito ma non tanto quanto gli altri è: ");
 Console.WriteLine(cibiPreferiti[cibiPreferiti.Length-1]);
+
+//Bonus
+Console.WriteLine("\n--Bonus--");
+if (cibiPreferiti.Length % 2 != 0)  //Controllo se è dispari, se lo è solo un valore sarà veramente centrale altrimenti due valori saranno centrali
+{   
+    Console.WriteLine("\nValore di mediana se array è dispari: ");
+    Console.WriteLine(cibiPreferiti[cibiPreferiti.Length / 2]);
+}
+else
+{
+    Console.WriteLine("\nValore di mediana se array è pari: ");
+    Console.WriteLine(cibiPreferiti[cibiPreferiti.Length / 2]);
+    Console.WriteLine(cibiPreferiti[cibiPreferiti.Length / 2 + 1]);
+}
